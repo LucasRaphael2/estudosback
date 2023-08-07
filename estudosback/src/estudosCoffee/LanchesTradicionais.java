@@ -42,7 +42,50 @@ public class LanchesTradicionais {
 				}else if(sanduiches == 6){
 					totalTradicionais += 17.00;
 				}else {
-					
+					System.out.println("Qual próximo item deseja escolher: 1 - passaportes ou 2 - batatas");
+					valor = in.nextInt();
+					if (valor == 1) {
+						System.out.printf("PASSAPORTES/HOT DOGS:%n%n1 - Passaporte de queijo coalho R$ 6.00%n2 - Passaporte de misto R$ 7.00%n3 - Passaporte de frango R$ 8.50%n4 - Passaporte de carne R$ 9.00%n5 - Passaporte de coração R$ 10.00%n6 - Passaporte de camarão R$ 17.00%n%n");
+						passaportes = in.nextDouble();
+						if(passaportes == 1) {
+							totalTradicionais += 6.00;
+						}else if(passaportes == 2) {
+							totalTradicionais += 7.00;
+						}else if(passaportes == 3) {
+							totalTradicionais += 8.50;
+						}else if(passaportes == 4) {
+							totalTradicionais += 9.00;
+						}else if(passaportes == 5) {
+							totalTradicionais += 10.00;
+						}else if(passaportes == 6){
+							totalTradicionais += 17.00;
+						}else {
+							System.out.println("Deseja solicitar batatas? 1 - sim ou 2 - não");
+							valor = in.nextInt();
+							if(valor == 1) {
+								System.out.printf("BATATAS:%n%n1 - Batata pequena R$ 5.00%n2 - Batata média R$ 7.00%n3 - Batata grande R$ 10.00%n4 - Batata pequena com bacon 7.50%n5 - Batata média com bacon R$ 9.50%n6 - Batata granda com bacon R$ 12.50%n%n");
+								batatas = in.nextDouble();
+								if(batatas == 1) {
+									totalTradicionais += 5.00;
+								}else if(batatas == 2) {
+									totalTradicionais += 7.00;
+								}else if(batatas == 3) {
+									totalTradicionais += 10.00;
+								}else if(batatas == 4) {
+									totalTradicionais += 7.50;
+								}else if(batatas == 5) {
+									totalTradicionais += 9.50;
+								}else if(batatas == 6){
+									totalTradicionais += 12.50;
+								}else {
+									
+								}
+							}
+						}
+					}else {
+						System.out.println(totalTradicionais);
+					}
+						
 				}
 				break;
 		case 2:
@@ -87,6 +130,8 @@ public class LanchesTradicionais {
 			
 			break;
 		}
+		
+		
 		in.close();
 	
 	}
