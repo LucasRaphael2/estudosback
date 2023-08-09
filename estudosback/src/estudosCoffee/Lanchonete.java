@@ -2,10 +2,23 @@ package estudosCoffee;
 
 import java.util.Scanner;
 
-public class Lanchonete {
+public class Lanchonete extends Object{
 
 	public static void main(String[] args) {
+	
+	Lanchonete lanches = new Lanchonete();
+	
+	lanches.lanches();
+	
+	}
+	
+		public void lanches() {
+			
+
+		
 		Scanner in = new Scanner(System.in);
+		
+		LanchesTradicionais lanchesTradicionais = new LanchesTradicionais();
 		
 		System.out.printf("Olá eu sou max, sejam muito bem-vindos a lanchonete do GORDÃO.%n%n");
 		
@@ -27,15 +40,37 @@ public class Lanchonete {
 		
 		System.out.printf("PÃES:%n%n1 - Seda R$ 1.50%n2 - Bola R$ 1.50%n3 - Italiano R$ 2.50%n4 - 9 grãos R$ 2.50%n5 - Baguete R$ 3.00%n6 - Brioche R$ 2.50%n%n");
 		
-		System.out.printf("CARNES:%n%n1 - Carne em tiras%n2 - Frango em tiras%n3 - Carne em cubos%n4 - Frango em cubos%n5 - Hambuguer smash%n6 - Hamburguer artesanal (O blend quem monta é o cliente)%n(OBS: todas as carnes contém 150g, exceto o hamburguer smash%n%n");
+		System.out.printf("CARNES:%n%n1 - Carne em tiras%n2 - Frango em tiras%n3 - Carne em cubos%n4 - Frango em cubos%n5 - Hambuguer smash%n6 - Hamburguer artesanal (O blend quem monta é o cliente)%n(OBS: todas as carnes contém 150g, exceto o hamburguer smash)%n%n");
 		
 		System.out.println("");
 		
-		
-		
 		System.out.printf("ACOMPANHAMENTOS EXTRAS:%n%n1 - Bacon R$ 2.50%n2 - Cheddar R$ 2.00%n3 - Cream Cheese R$ 2.00%n4 - Catupiry R$ 2.00%n%n");
-		in.close();
+		
+		System.out.println("Por onde deseja começar: 1 - Bebidas,  2 - lanches tradicionais ou 3 lanches montaveis: ");
+		int escolha = in.nextInt();
+		
+		switch(escolha) {
+		case 1:
+			
+			break;
+		
+		case 2:
+			lanchesTradicionais.Tradicionais();
+			break;
+			
+		case 3:
+			
+			break;
+			
+		case 0:
+			System.out.println("Obrigado por usar nos visitar, Até logo");
+			break;
+		
+		}
 
+		
+		in.close();
 	}
+
 
 }
