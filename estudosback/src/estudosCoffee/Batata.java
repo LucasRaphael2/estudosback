@@ -2,15 +2,6 @@ package estudosCoffee;
 
 
 
-/*public class Batata extends ItemLanchonete{
-	Scanner in = new Scanner(System.in);
-	
-	public Batata(String name, double price) {
-
-		super(name, price);
-		
-	}
-}*/
 
 
 import java.util.ArrayList;
@@ -24,8 +15,12 @@ public class Batata {
     public Batata() {
         name = "Batatas";
         itens = new ArrayList<>();
-        adicionarItem("X-Salada", 5.00);
-        adicionarItem("Bauru", 7.00);
+        adicionarItem("Batata Pequena", 5.00);
+        adicionarItem("Batata Média", 7.00);
+        adicionarItem("Batata Grande", 10.00);
+        adicionarItem("Batata Pequena com Bacon", 7.50);
+        adicionarItem("Batata Média com Bacon", 9.50);
+        adicionarItem("Batata Grande com Bacon", 12.50);
         // Adicione mais itens de batatas aqui
     }
 
@@ -41,6 +36,15 @@ public class Batata {
         totalPedido = calcularTotalPedido(itens);
 
         return totalPedido;
+    }
+    
+    public void gerarCupom() {
+        System.out.println(name.toUpperCase());
+        for (ItemLanchonete item : itens) {
+            if (item.getQuantity() > 0) {
+                System.out.println(item.getName() + " - " + item.getQuantity() + " unidade(s) - R$" + item.getPrice() + " cada - Total: R$" + item.calcularTotal());
+            }
+        }
     }
 
     private void escolherProdutos(List<ItemLanchonete> itens, Scanner in) {

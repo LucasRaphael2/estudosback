@@ -88,6 +88,14 @@ public class Sanduiche {
 
         return totalPedido;
     }
+    public void gerarCupom() {
+        System.out.println(name.toUpperCase());
+        for (ItemLanchonete item : itens) {
+            if (item.getQuantity() > 0) {
+                System.out.println(item.getName() + " - " + item.getQuantity() + " unidade(s) - R$" + item.getPrice() + " cada - Total: R$" + item.calcularTotal());
+            }
+        }
+    }
 
     private void escolherProdutos(List<ItemLanchonete> itens, Scanner in) {
         int escolha;

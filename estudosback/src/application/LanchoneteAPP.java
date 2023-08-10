@@ -317,10 +317,20 @@ public class LanchoneteAPP {
             }
         } while (escolha != 0);
 
-        System.out.printf("%nPedido finalizado. Total a pagar: R$" + totalPedido);
+        System.out.println("Pedido finalizado. Total a pagar: R$" + totalPedido);
+
+        gerarCupom(sanduiches, passaportes, batatas);
 
         in.close();
     }
+
+	private static void gerarCupom(Sanduiche sanduiches, Passaporte passaportes, Batata batatas) {
+		System.out.println("\nCUPOM FISCAL:");
+		sanduiches.gerarCupom();
+		passaportes.gerarCupom();
+		batatas.gerarCupom();
+		
+	}
 }
 
 

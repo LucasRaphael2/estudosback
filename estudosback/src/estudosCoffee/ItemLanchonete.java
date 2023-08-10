@@ -52,9 +52,15 @@ public class ItemLanchonete {
     	quantity++;
     }
 
+    public int getQuantity() {
+    	
+    	return quantity;
+    }
+    
     public double calcularTotal() {
         return price * quantity;
     }
+
 }
 
 

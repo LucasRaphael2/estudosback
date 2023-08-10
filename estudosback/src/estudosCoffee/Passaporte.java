@@ -1,11 +1,5 @@
 package estudosCoffee;
 
-/*public class Passaporte extends ItemLanchonete {
-	public Passaporte(String name, double price) {
-		super(name, price);
-	}
-}*/
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +12,12 @@ public class Passaporte {
     public Passaporte() {
         name = "Passaportes";
         itens = new ArrayList<>();
-        adicionarItem("X-Salada", 5.00);
-        adicionarItem("Bauru", 7.00);
+        adicionarItem("Passaporte de Queijo Coalho", 6.00);
+        adicionarItem("Passaporte de Misto", 7.00);
+        adicionarItem("Passaporte de Frango", 9.50);
+        adicionarItem("Passaporte de carne", 10.00);
+        adicionarItem("Passaporte de Coração", 13.00);
+        adicionarItem("Passaporte de Camarão", 17.00);
         // Adicione mais itens de passaportes aqui
     }
 
@@ -37,6 +35,15 @@ public class Passaporte {
         return totalPedido;
     }
 
+    public void gerarCupom() {
+        System.out.println(name.toUpperCase());
+        for (ItemLanchonete item : itens) {
+            if (item.getQuantity() > 0) {
+                System.out.println(item.getName() + " - " + item.getQuantity() + " unidade(s) - R$" + item.getPrice() + " cada - Total: R$" + item.calcularTotal());
+            }
+        }
+    }
+    
     private void escolherProdutos(List<ItemLanchonete> itens, Scanner in) {
         int escolha;
 
