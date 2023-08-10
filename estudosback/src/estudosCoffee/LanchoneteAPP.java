@@ -1,12 +1,15 @@
 package estudosCoffee;
 
-import java.util.Scanner;
+/*import java.util.Scanner;
 
-public class Lanchonete extends Object{
+import estudosCoffee.LanchesTradicionais.ItemLanchonete;
+
+public class LanchoneteAPP extends Object{
 
 	public static void main(String[] args) {
 	
-	Lanchonete lanches = new Lanchonete();
+	LanchoneteAPP lanches = new LanchoneteAPP();
+
 	
 	lanches.lanches();
 	
@@ -18,7 +21,7 @@ public class Lanchonete extends Object{
 		
 		Scanner in = new Scanner(System.in);
 		
-		LanchesTradicionais lanchesTradicionais = new LanchesTradicionais();
+		
 		
 		System.out.printf("Olá eu sou max, sejam muito bem-vindos a lanchonete do GORDÃO.%n%n");
 		
@@ -55,7 +58,7 @@ public class Lanchonete extends Object{
 			break;
 		
 		case 2:
-			lanchesTradicionais.Tradicionais();
+		
 			break;
 			
 		case 3:
@@ -71,6 +74,12 @@ public class Lanchonete extends Object{
 		
 		in.close();
 	}
+		
+		public static double fazerPedido(ItemLanchonete item, Scanner in) {
+			
+			System.out.println("Quantidade desejada: ");
+			
+		}
 
 
-}
+}*/

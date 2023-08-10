@@ -1,10 +1,8 @@
 package estudosCoffee;
 
-import java.util.Scanner;
-
 public class Passaportes extends Object{
 
-	public void Passaporte() {
+	/*public void Passaporte() {
 		Scanner in = new Scanner(System.in);
 		
 		double sanduiches = 0;
@@ -129,7 +127,7 @@ public class Passaportes extends Object{
 		System.out.println(totalTradicionais);
 		
 		in.close();
-	}
+	}*/
 		
 	}
 

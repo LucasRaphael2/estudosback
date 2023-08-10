@@ -9,23 +9,28 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class FirstProjectController implements Initializable{
 
-    @FXML
-    private Button button;
 
-    @FXML
-    private Label label;
 
-    @FXML
-    void acaoDoBotao(ActionEvent event) {
-    	System.out.println("VOCÊ CLICOU");
-    }
 
-	@Override
-	public void initialize(URL url, ResourceBundle rb) {
-		// TODO Auto-generated method stub
-		
-	}
+public class FirstProjectController implements Initializable {
+
+	    @FXML
+	    private Button button;
+
+	    @FXML
+	    private Label label;
+	    
+	    void AcaoDoBotao(ActionEvent event) {
+	    	System.out.println("Você Clicou");
+	    }
+	 
+		@Override
+		public void initialize(URL url, ResourceBundle rb) {
+			
+			
+		}
+
+
 
 }

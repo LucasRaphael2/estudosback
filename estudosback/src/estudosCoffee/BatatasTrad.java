@@ -3,8 +3,11 @@ package estudosCoffee;
 import java.util.Scanner;
 
 public class BatatasTrad {
+	Scanner in = new Scanner(System.in);
+
 	
-	public void batatas() {
+	
+	/*public void batatas() {
 		Scanner in = new Scanner(System.in);
 		
 		double sanduichesTrad = 0;
@@ -16,7 +19,7 @@ public class BatatasTrad {
 		
 		int segundaEscolha = 0;
 		int lancheExtra = 0;
-		Lanchonete lanches = new Lanchonete();
+		LanchoneteAPP lanches = new LanchoneteAPP();
 		
 		
 		System.out.printf("BATATAS:%n%n1 - Batata pequena R$ 5.00%n2 - Batata média R$ 7.00%n3 - Batata grande R$ 10.00%n4 - Batata pequena com bacon 7.50%n5 - Batata média com bacon R$ 9.50%n6 - Batata granda com bacon R$ 12.50%n%n");
@@ -142,8 +145,9 @@ public class BatatasTrad {
 		
 		System.out.println(totalPedidoTradicionais);
 		
-		in.close();
+
 		
-	}
+		in.close();
+	}*/
 
 }

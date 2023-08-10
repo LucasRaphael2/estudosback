@@ -1,10 +1,9 @@
 package estudosCoffee;
 
-import java.util.Scanner;
-
 public class Sanduiches extends Object{
-	
-	public void Sanduiche() {
+
+
+	/*public void Sanduiche() {
 		Scanner in = new Scanner(System.in);
 		
 		double sanduiches = 0;
@@ -134,6 +133,6 @@ public class Sanduiches extends Object{
 
 	
 	in.close();
-	}
+	}*/
 
 }

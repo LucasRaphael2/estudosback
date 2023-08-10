@@ -4,7 +4,15 @@ import java.util.Scanner;
 
 public class SanduichesTrad {
 	
-	public void sanduiches() {
+	Scanner in = new Scanner(System.in);
+	
+
+	
+	
+	
+	
+	
+	/*public void sanduiches() {
 		Scanner in = new Scanner(System.in);
 		
 		double sanduichesTrad = 0;
@@ -17,7 +25,7 @@ public class SanduichesTrad {
 		
 		int segundaEscolha = 0;
 		int lancheExtra = 0;
-		Lanchonete lanches = new Lanchonete();
+		LanchoneteAPP lanches = new LanchoneteAPP();
 		
 		
 		System.out.printf("SANDUICHES:%n%n1 - X-Salada R$ 5.00%n2 - Bauru R$ 7.00%n3 - Minuano R$ 8.50%n4 - X-Bacon R$ 10.50%n5 - X-Calabresa R$ 12.00%n6 - X-Tudo R$ 17.00%n%n");
@@ -139,6 +147,6 @@ public class SanduichesTrad {
 
 	
 	in.close();
-	}
+	}*/
 
 }

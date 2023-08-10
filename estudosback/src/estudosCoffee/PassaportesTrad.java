@@ -3,11 +3,13 @@ package estudosCoffee;
 import java.util.Scanner;
 
 public class PassaportesTrad {
-	
-	public void passaportes() {
-	
 	Scanner in = new Scanner(System.in);
 	
+
+	
+	/*public void passaportes() {
+	
+	Scanner in = new Scanner(System.in);
 	double sanduichesTrad = 0;
 	double passaportesTrad = 0;
 	double batatasTrad = 0;
@@ -18,7 +20,7 @@ public class PassaportesTrad {
 	
 	int segundaEscolha = 0;
 	int lancheExtra = 0;
-	Lanchonete lanches = new Lanchonete();
+	LanchoneteAPP lanches = new LanchoneteAPP();
 	
 	
 	System.out.printf("PASSAPORTES/HOT DOGS:%n%n1 - Passaporte de queijo coalho R$ 6.00%n2 - Passaporte de misto R$ 7.00%n3 - Passaporte de frango R$ 8.50%n4 - Passaporte de carne R$ 9.00%n5 - Passaporte de coração R$ 10.00%n6 - Passaporte de camarão R$ 17.00%n%n");
@@ -135,8 +137,12 @@ public class PassaportesTrad {
 
 	System.out.println(totalPedidoTradicionais);
 	
-	in.close();
 	
-	}
+	}*/
+
+	
+	
+	
+	
 
 }
