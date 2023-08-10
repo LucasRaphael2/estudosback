@@ -296,7 +296,7 @@ public class LanchoneteAPP {
             System.out.println("2 - Passaportes");
             System.out.println("3 - Batatas");
             System.out.println("0 - Finalizar pedido");
-            System.out.print("Escolha uma opção: ");
+            System.out.printf("%nEscolha uma opção: ");
             escolha = in.nextInt();
 
             switch (escolha) {
@@ -317,7 +317,7 @@ public class LanchoneteAPP {
             }
         } while (escolha != 0);
 
-        System.out.println("Pedido finalizado. Total a pagar: R$" + totalPedido);
+        System.out.printf("%nPedido finalizado. Total a pagar: R$" + totalPedido);
 
         in.close();
     }

@@ -95,11 +95,12 @@ public class Sanduiche {
         do {
             int opcao = 1;
             for (ItemLanchonete item : itens) {
-                System.out.println(opcao + " - " + item.getName() + " R$ " + item.getPrice());
+                System.out.println(opcao + " -  " + item.getName() + " R$ " + item.getPrice());
+                System.out.println("");
                 opcao++;
             }
             System.out.println("0 - Voltar");
-            System.out.print("Escolha uma opção: ");
+            System.out.printf("%nEscolha uma opção: ");
             escolha = in.nextInt();
 
             if (escolha >= 1 && escolha <= itens.size()) {
@@ -121,6 +122,4 @@ public class Sanduiche {
         return totalPedido;
     }
 }
-
-
 

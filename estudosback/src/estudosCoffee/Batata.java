@@ -26,7 +26,7 @@ public class Batata {
         itens = new ArrayList<>();
         adicionarItem("X-Salada", 5.00);
         adicionarItem("Bauru", 7.00);
-        // Adicione mais itens de sanduíches aqui
+        // Adicione mais itens de batatas aqui
     }
 
     public void adicionarItem(String name, double price) {
@@ -50,10 +50,11 @@ public class Batata {
             int opcao = 1;
             for (ItemLanchonete item : itens) {
                 System.out.println(opcao + " - " + item.getName() + " R$ " + item.getPrice());
+                System.out.println("");
                 opcao++;
             }
             System.out.println("0 - Voltar");
-            System.out.print("Escolha uma opção: ");
+            System.out.printf("%nEscolha uma opção: ");
             escolha = in.nextInt();
 
             if (escolha >= 1 && escolha <= itens.size()) {
