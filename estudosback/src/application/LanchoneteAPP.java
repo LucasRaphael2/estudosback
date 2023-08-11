@@ -290,6 +290,7 @@ public class LanchoneteAPP {
         System.out.println("Bem-vindo à Lanchonete!");
 
         int escolha;
+       
         do {
             System.out.println("\nMENU:");
             System.out.println("1 - Sanduíches");
@@ -316,8 +317,9 @@ public class LanchoneteAPP {
                     break;
             }
         } while (escolha != 0);
-
-        System.out.println("Pedido finalizado. Total a pagar: R$" + totalPedido);
+        double porcentagem = totalPedido*0.10;
+        double valorComPorcentagem = totalPedido + porcentagem;
+        System.out.printf("Pedido finalizado. Total a pagar: R$"+ valorComPorcentagem);
 
         gerarCupom(sanduiches, passaportes, batatas);
 
@@ -325,7 +327,7 @@ public class LanchoneteAPP {
     }
 
 	private static void gerarCupom(Sanduiche sanduiches, Passaporte passaportes, Batata batatas) {
-		System.out.println("\nCUPOM FISCAL:");
+		System.out.println("\n================CUPOM FISCAL==================");
 		sanduiches.gerarCupom();
 		passaportes.gerarCupom();
 		batatas.gerarCupom();

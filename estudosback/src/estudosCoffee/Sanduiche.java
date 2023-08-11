@@ -89,12 +89,18 @@ public class Sanduiche {
         return totalPedido;
     }
     public void gerarCupom() {
+    	
+    	double porcentagemAtendimento = calcularTotalPedido(itens)*0.10;
+    	double totalCategoria = calcularTotalPedido(itens)+porcentagemAtendimento;
         System.out.println(name.toUpperCase());
         for (ItemLanchonete item : itens) {
             if (item.getQuantity() > 0) {
-                System.out.println(item.getName() + " - " + item.getQuantity() + " unidade(s) - R$" + item.getPrice() + " cada - Total: R$" + item.calcularTotal());
+                System.out.println(item.getName() + " \n" + item.getQuantity() + " - unidade(s) \nR$" + item.getPrice() + " cada  \nTotal item: R$" + item.calcularTotal());
+                System.out.println("=============================");
             }
         }
+        System.out.println("Porcentagem: "+ 0.10*100+"%");
+        System.out.println("Total a pagar: R$"+totalCategoria+"\n");
     }
 
     private void escolherProdutos(List<ItemLanchonete> itens, Scanner in) {
