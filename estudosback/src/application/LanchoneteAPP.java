@@ -326,12 +326,11 @@ public class LanchoneteAPP {
         in.close();
     }
 
-	private static void gerarCupom(Sanduiche sanduiches, Passaporte passaportes, Batata batatas) {
+	private static void gerarCupom(Sanduiche sanduiches, Passaporte passaportes, Batata batatas){
 		System.out.println("\n================CUPOM FISCAL==================");
 		sanduiches.gerarCupom();
 		passaportes.gerarCupom();
 		batatas.gerarCupom();
-		
 	}
 }
 
