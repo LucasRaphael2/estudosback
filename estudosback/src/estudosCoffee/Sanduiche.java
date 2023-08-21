@@ -88,7 +88,7 @@ public class Sanduiche {
 
         return totalPedido;
     }
-    public void gerarCupom() {
+public void gerarCupom() {
     	
     	double porcentagemAtendimento = calcularTotalPedido(itens)*0.10;
     	double totalCategoria = calcularTotalPedido(itens)+porcentagemAtendimento;
